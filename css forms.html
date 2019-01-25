@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <style>
+        [input="text"],select{
+            width:100%;
+            padding:12px 20px;
+            border-radius:4px;
+            border:2px solid goldenrod;
+            display:inline-block;
+             margin:8px 0;
+        }
+        [input="submit"]{
+            border-radius: 6px;
+            border:none;
+            color:indigo;
+            background-color: lightgoldenrodyellow;
+            cursor:pointer;
+            width:100%;
+            margin:8px 0;
+            padding:12px 20px;
+         }
+         [input="submit"]:hover{
+             background-color: blue;
+         }
+         div{
+             border-radius:3px;
+             border:2px solid peru;
+             padding:20px;
+         }
+            </style>
+    </head>
+    <body>
+            <div>
+                    <form action="/action_page.php">
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  
+                      <label for="country">Country</label>
+                      <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                      </select>
+                    
+                      <input type="submit" value="Submit">
+                    </form>
+                </div>
+    </body>
+</html>
