@@ -7,12 +7,19 @@
             padding:12px 20px 12px 40px;
             margin:12px 0;
             box-sizing:border-box;
-            width:100;
+            width:100%;
             font-size:16px;
-            background-color: blue;
+            background-color:white;
             background-image: url('images.png');
             background-position: 10px 10px;
             background-repeat:no-repeat;
+        }
+        select{
+            border:none;
+            border-radius:4px;
+            padding:12px 20px;
+            width:100%;
+            background-color: crimson;
         }
             </style>
     </head>
@@ -22,7 +29,12 @@
             
             <form>
               <input type="text" name="search" placeholder="Search..">
-            </form>
+            <select id="country" name="country">
+                <option value="au">australia</option>
+                <option value="ca">canada</option>
+                <option value="in">india</option>
+            </select>
+        </form>
             
             </body>
 </html>
